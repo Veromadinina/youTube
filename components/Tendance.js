@@ -26,9 +26,7 @@ const styles = StyleSheet.create({
 
 tendance:{
 
-   
     height:180,
-    
     justifyContent:'space-between',
     paddingHorizontal:20,
 
@@ -38,6 +36,7 @@ tendance:{
 texte:{
     fontSize:20,
     marginTop:2,
+    color:'rgba(105, 3, 166, 1)',
 
 
 

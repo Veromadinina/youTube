@@ -16,7 +16,7 @@ const Content = () => {
         horizontal
       />
 
-      <Text style={styles.textvid}  >Vidéos</Text>
+      <Text style={styles.textVid}  >Vidéos</Text>
       <FlatList
         data={videos}
         renderItem={({item})=><Maxi item={item}/>}
@@ -35,15 +35,18 @@ const styles = StyleSheet.create({
 texto:{
     fontSize:20,
     paddingHorizontal:20,
-    top:-30,
+    top:-10,
+    color:'rgba(105, 3, 166, 1)',
     
 },
 
-textvid:{
+textVid:{
 
     fontSize:20,
     paddingHorizontal:20,
-    top:20,  
+    marginTop:10,
+    color:'rgba(105, 3, 166, 1)', 
+    
 
 
 

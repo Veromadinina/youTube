@@ -1,11 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View,ImageBackground } from 'react-native'
 import React from 'react'
+import { videos } from '../../constantes/videos'
 
 const Maxi = ({item}) => {
   return (
-    <View style={styles.maxi}>
-    <Text>{item.titre}</Text>
-  </View>
+    
+        <ImageBackground style={styles.maxi} imageStyle= {{borderRadius:5}} source={item.image}>
+            <View style={styles.texVideo}>
+    <Text style={styles.texMaxi}>{item.titre}</Text>
+            </View>
+        </ImageBackground>
+
   )
 }
 
@@ -14,21 +19,30 @@ export default Maxi
 const styles = StyleSheet.create({
 
     maxi:{
-    height:150,
-    top:20,
-    width:300,
-    margin:10,
-    backgroundColor:"rgba(10, 148, 255, 0.21)",
-    padding:5,
-    borderColor:'black',
-    borderWidth:2,
-   alignItems:'center'
+    height:170,
+    margin:20,
+    marginTop:15,
+    
+    justifyContent: 'flex-end',
+    
+    Top:5,
+    },
 
+    texVideo:{
 
+        backgroundColor:'black',
+        height:30,
+        paddingHorizontal:20,
+    
+    },
 
+    texMaxi:{
 
+        color:'white'
 
     }
+
+   
 
 
 

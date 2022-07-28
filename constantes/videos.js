@@ -4,9 +4,9 @@ export const videos =[
     
     id:1, 
     categoriesId:1, 
-    titre:"Les plages de la Martinique",
+    titre:"Martinique : les plages",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/10.jpg"),
     tendance:1,
     date:'25/07/2022'
 },
@@ -14,9 +14,9 @@ export const videos =[
     
     id:2, 
     categoriesId:2, 
-    titre:"Les Fleurs de la Martinique",
+    titre:"Martinique : les fleurs",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/6.jpg"),
     tendance:1,
     date:'25/07/2022'
 },
@@ -24,9 +24,9 @@ export const videos =[
     
     id:3, 
     categoriesId:3, 
-    titre:"Les animaux de la Martinique",
+    titre:"Les animaux sur l'ile",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/4.jpg"),
     tendance:1,
     date:"25/07/2022"
 },
@@ -34,9 +34,9 @@ export const videos =[
     
     id:4, 
     categoriesId:1, 
-    titre:"Les rivières de la Martinique",
+    titre:"Les rivières",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/5.jpg"),
     tendance:0,
     date:"25/07/2022"
 },
@@ -44,9 +44,9 @@ export const videos =[
     
     id:5, 
     categoriesId:2, 
-    titre:"Les montagnes de la Martinique",
+    titre:"Les montagnes ",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/7.jpg"),
     tendance:0,
     date:"25/07/2022"
 },
@@ -54,9 +54,9 @@ export const videos =[
     
     id:6, 
     categoriesId:3, 
-    titre:"Les arbres de la Martinique",
+    titre:"Les arbres",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/3.jpg"),
     tendance:0,
     date:"25/07/2022"
 },
@@ -64,9 +64,9 @@ export const videos =[
     
     id:7, 
     categoriesId:1, 
-    titre:"Les desserts de la Martinique",
+    titre:"Les desserts locaux",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/11.jpg"),
     tendance:0,
     date:"25/07/2022"
 },
@@ -74,9 +74,9 @@ export const videos =[
     
     id:8, 
     categoriesId:2, 
-    titre:"Les accras de la Martinique",
+    titre:"Les accras",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/2.jpg"),
     tendance:1,
     date:"25/07/2022"
 },
@@ -84,9 +84,9 @@ export const videos =[
     
     id:9, 
     categoriesId:3, 
-    titre:"ZUT",
+    titre:"Zoo",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/9.jpg"),
     tendance:0,
     date:"25/07/2022"
 },
@@ -94,22 +94,13 @@ export const videos =[
     
     id:10, 
     categoriesId:1, 
-    titre:"FLUT",
+    titre:"Les Flutes",
     description:"bla bla bla",
-    image:"url",
+    image:require("../images/1.jpg"),
     tendance:1,
     date:"25/07/2022"
-},
-{
-    
-    id:11, 
-    categoriesId:2, 
-    titre:"Les plages de la Martinique",
-    description:"bla bla bla",
-    image:"url",
-    tendance:0,
-    date:"25/07/2022"
-},
+}
+
 
 
 
