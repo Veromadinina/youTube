@@ -5,7 +5,7 @@ import Category from './Category'
 import { videos } from '../constantes/videos'
 import Maxi from './cards/Maxi'
 
-const Content = () => {
+const Content = ({navigation}) => {
   return (
     <View>
       <Text style={styles.texto} >Catégories</Text>
@@ -19,7 +19,7 @@ const Content = () => {
       <Text style={styles.textVid}  >Vidéos</Text>
       <FlatList
         data={videos}
-        renderItem={({item})=><Maxi item={item}/>}
+        renderItem={({item})=><Maxi navigation={navigation} item={item}/>}
         keyExtractor={(item) => item.id}
         
       />

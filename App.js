@@ -1,21 +1,27 @@
-import { StyleSheet, Text, View,Icon } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
-import Icon2 from 'react-native-vector-icons/AntDesign'
-import Header from './components/Header'
-import Tendance from './components/Tendance'
-import Content from './components/Content'
+import Home from './components/Home'
+import Detail from './components/Detail';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+
+// constante pour la navigation
+const Stack = createNativeStackNavigator();
+
 
 const App = () => {
   return (
-    <View>
-     <Header/>
-     <Tendance/>
-     <Content/>
-
-    </View>
+    <NavigationContainer>
+    <Stack.Navigator initialRouteName="Home"
+      //Pour cacher le header de la navigation
+      screenOptions={{headerShown:false}}>
+      
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Detail" component={Detail} />
+    </Stack.Navigator>
+  </NavigationContainer>
   )
 }
 
 export default App
-
-const styles = StyleSheet.create({})
